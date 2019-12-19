@@ -1,0 +1,77 @@
+RewriteEngine on
+
+RewriteRule ^index index.php [NC,QSA,L]
+
+RewriteRule ^home/?$ home.php [NC,QSA,L]
+RewriteRule ^novoNivel/?$ novoNivel.php [NC,QSA,L]
+RewriteRule ^niveis/?$ niveis.php [NC,QSA,L]
+RewriteRule ^nivelDetail/?$ nivelDetail.php [NC,QSA,L]
+
+RewriteRule ^cursoNovo/?$ cursoNovo.php [NC,QSA,L]
+RewriteRule ^cursos/?$ cursos.php [NC,QSA,L]
+RewriteRule ^cursoDetail/?$ cursoDetail.php [NC,QSA,L]
+
+RewriteRule ^disciplinaNova/?$ disciplinaNova.php [NC,QSA,L]
+RewriteRule ^disciplinas/?$ disciplinas.php [NC,QSA,L]
+RewriteRule ^disciplinaDetail/?$ disciplinaDetail.php [NC,QSA,L]
+
+RewriteRule ^salaNova/?$ salaNova.php [NC,QSA,L]
+RewriteRule ^salas/?$ salas.php [NC,QSA,L]
+RewriteRule ^salaDetail/?$ salaDetail.php [NC,QSA,L]
+
+RewriteRule ^turmaNova/?$ turmaNova.php [NC,QSA,L]
+RewriteRule ^turmas/?$ turmas.php [NC,QSA,L]
+RewriteRule ^turmaDetail/?$ turmaDetail.php [NC,QSA,L]
+
+RewriteRule ^tipoAvaliacaoNovo/?$ tipoAvaliacaoNovo.php [NC,QSA,L]
+RewriteRule ^tiposAvaliacao/?$ tiposAvaliacao.php [NC,QSA,L]
+RewriteRule ^tipoAvaliacaoDetail/?$ tipoAvaliacaoDetail.php [NC,QSA,L]
+
+RewriteRule ^responsavelNovo/?$ responsavelNovo.php [NC,QSA,L]
+RewriteRule ^responsaveis/?$ responsaveis.php [NC,QSA,L]
+RewriteRule ^responsavelDetail/?$ responsavelDetail.php [NC,QSA,L]
+RewriteRule ^responsavelEdit/?$ responsavelEdit.php [NC,QSA,L]
+
+RewriteRule ^alunoNovo/?$ alunoNovo.php [NC,QSA,L]
+RewriteRule ^alunos/?$ alunos.php [NC,QSA,L]
+RewriteRule ^alunoDetail/?$ alunoDetail.php [NC,QSA,L]
+
+RewriteRule ^professorNovo/?$ professorNovo.php [NC,QSA,L]
+RewriteRule ^professores/?$ professores.php [NC,QSA,L]
+RewriteRule ^professorDetail/?$ professorDetail.php [NC,QSA,L]
+
+RewriteRule ^matriculaDetail/?$ matriculaDetail.php [NC,QSA,L]
+
+RewriteRule ^config/?$ config.php [NC,QSA,L]
+
+RewriteRule ^tiposUsuario/?$ tiposUsuario.php [NC,QSA,L]
+RewriteRule ^tipoUsuarioDetail/?$ tipoUsuarioDetail.php [NC,QSA,L]
+RewriteRule ^tipoUsuarioNovo/?$ tipoUsuarioNovo.php [NC,QSA,L]
+
+RewriteRule ^rotinas/?$ rotinas.php [NC,QSA,L]
+RewriteRule ^subrotinaDetail/?$ subrotinaDetail.php [NC,QSA,L]
+
+
+RewriteRule ^profTurmas/?$ profTurmas.php [NC,QSA,L]
+RewriteRule ^profTurmaDetail/?$ profTurmaDetail.php [NC,QSA,L]
+
+RewriteRule ^notasDisciplina/?$ notasDisciplina.php [NC,QSA,L]
+RewriteRule ^notaDetail/?$ notaDetail.php [NC,QSA,L]
+
+RewriteRule ^planejamentoDisc/?$ planejamentoDisc.php [NC,QSA,L]
+RewriteRule ^planejamentoNovo/?$ planejamentoNovo.php [NC,QSA,L]
+RewriteRule ^planejamentoDetail/?$ planejamentoDetail.php [NC,QSA,L]
+
+RewriteRule ^planoDisc/?$ planoDisc.php [NC,QSA,L]
+RewriteRule ^planoNovo/?$ planoNovo.php [NC,QSA,L]
+RewriteRule ^planoDetail/?$ planoDetail.php [NC,QSA,L]
+
+RewriteRule ^frequenciaDisc/?$ frequenciaDisc.php [NC,QSA,L]
+RewriteRule ^frequenciaNova/?$ frequenciaNova.php [NC,QSA,L]
+RewriteRule ^frequenciaDetail/?$ frequenciaDetail.php [NC,QSA,L]
+
+RewriteRule ^dps/?$ dps.php [NC,QSA,L]
+
+RewriteRule ^medias/?$ medias.php [NC,QSA,L]
+RewriteRule ^mediaNova/?$ mediaNova.php [NC,QSA,L]
+RewriteRule ^mediaDetail/?$ mediaDetail.php [NC,QSA,L]
