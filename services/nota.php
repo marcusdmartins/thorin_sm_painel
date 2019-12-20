@@ -7,13 +7,20 @@ require_once 'funcoes.php';
 if (!empty($_POST)) {
     //INSERIR
     if ($_POST['function'] == 'nova') {
+        
+        $t = array();
+        array_push($t, moeda_to_float($_POST['t1']), 
+                       moeda_to_float($_POST['t2']), 
+                       moeda_to_float($_POST['t3']), 
+                       moeda_to_float($_POST['t4']));
+       
+        //LANÇA NOTA DO MÊS LETIVO
         $campos = array("pessoa" => $_POST['pessoa'], 
                         "tipoAvaliacao" => $_POST['tipoAvaliacao'],
                         "md" => $_POST['md'],
-                        "dataAvaliacao" => formata_padrao_data_bd($_POST['dataAvaliacao']),
-                        "valor" => moeda_to_float($_POST['valor']));
+                        "notasSemanais" => $t);
         
-        $url = "nota/nova";
+        $url = "notaSemanal/nova";
         
         $retorno = Api::requisicao($url, $campos);
         $ret = json_decode($retorno);

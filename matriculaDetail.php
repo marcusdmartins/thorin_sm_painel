@@ -281,10 +281,28 @@ if(!empty($_GET)){
                         <div class="card">
                             <div class="card-body card-padding">
                                 <div class="row">
-                                    <div class="col-sm-12">
+                                    <div class="col-sm-3">
                                         <div class="fg-line form-group">
-                                            <label>Valor</label>
-                                            <input type="text" class="form-control input-sm" id="valor" name="valor" required="">
+                                            <label>T1</label>
+                                            <input type="text" class="form-control input-sm" id="valor1" name="t1" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="fg-line form-group">
+                                            <label>T2</label>
+                                            <input type="text" class="form-control input-sm" id="valor2" name="t2" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="fg-line form-group">
+                                            <label>T3</label>
+                                            <input type="text" class="form-control input-sm" id="valor3" name="t3" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="fg-line form-group">
+                                            <label>T4</label>
+                                            <input type="text" class="form-control input-sm" id="valor4" name="t4" required="">
                                         </div>
                                     </div>
 
@@ -311,19 +329,12 @@ if(!empty($_GET)){
 
                                     <div class="col-sm-6">  
                                         <div class="fg-line form-group">
-                                            <label>Tipo de avaliação</label><br>
+                                            <label>Mês letivo</label><br>
                                             <select style="padding: 10px; border: none; width: 100%" id="tipos" name="tipoAvaliacao">
                                                 <option selected="" disabled="" value="">SELECIONE</option>
                                             </select>
                                         </div>
                                     </div>                                                                
-
-                                    <div class="col-sm-6">  
-                                        <div class="fg-line form-group">
-                                            <label>Data da avaliação</label><br>
-                                            <input name="dataAvaliacao" type='text' data-toggle="datepicker" class="form-control dataAvaliacao">
-                                        </div>
-                                    </div>                                                        
 
                                     <div class="col-sm-6">
                                         <div class="preloader loadingEdit" style="display: none; float: left; padding-top: 5px">
@@ -477,7 +488,10 @@ if(!empty($_GET)){
             });
         }         
         
-        $('#valor').mask('00,00', {reverse: true});
+        $('#valor1').mask('00,00', {reverse: true});
+        $('#valor2').mask('00,00', {reverse: true});
+        $('#valor3').mask('00,00', {reverse: true});
+        $('#valor4').mask('00,00', {reverse: true});
         
     </script>      
 
