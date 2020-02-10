@@ -63,6 +63,23 @@ if (!empty($_POST)) {
             echo $ret->message;
         }
         
+    }    
+    
+    //BUSCA MEDIAS POR MD
+    if($_POST['function'] == 'buscaMediasPorMDCombo'){
+        $campos = array("md" => $_POST['md']);
+        $url = "media/buscaMediasPorMD";
+        
+        $retorno = Api::requisicao($url, $campos);
+        $ret = json_decode($retorno);
+        
+        if(!isset($ret->codigo)){
+            foreach ($ret as $dado){
+            echo'<option style = "padding: 16px" value="'.$dado->id.'">'.$dado->nome .' - '.$dado->valor.'</option>';
+        }
+        }else{
+            echo'<option style = "padding: 6px" value="">Nenhuma média para ser recuperada</option>';
+        }   
     }     
 }
 
